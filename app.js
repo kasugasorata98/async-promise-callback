@@ -10,7 +10,7 @@ const { default: axios } = require("axios");
     if (err) {
       console.log(err);
     } else {
-      await sleep(1000);
+      await sleep(1000); // to emulate a scenario whereby the api is slow
       console.log("Fetch with Callback done");
     }
   });
